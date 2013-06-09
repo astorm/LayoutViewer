@@ -9,7 +9,7 @@ This extension's functionality has been supplanted by <a href="http://store.puls
 
 Implements a query string based way to view layout information for a particular request. 
 
-Original Post: http://alanstorm.com/layouts_blocks_and_templates
+Original Blog Post: http://alanstorm.com/layouts_blocks_and_templates
 
 ###Build Instructions
 
