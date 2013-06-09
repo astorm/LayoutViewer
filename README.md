@@ -10,3 +10,11 @@ This extension's functionality has been supplanted by <a href="http://store.puls
 Implements a query string based way to view layout information for a particular request. 
 
 Original Post: http://alanstorm.com/layouts_blocks_and_templates
+
+###Build Instructions
+
+The `build_layout_viewer.bash` file is a bash script that will create a simple tar archive of the extension files. 
+
+    $ ./build_layout_viewer.bash
+    
+This script assumes the existence of a `var` folder.    
