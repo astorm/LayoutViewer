@@ -39,15 +39,19 @@ class Alanstormdotcom_Layoutviewer_Model_Observer extends Varien_Object{
     //entry point
     public function checkForLayoutDisplayRequest($observer) {			
         $this->init();
-        $is_set = array_key_exists(self::FLAG_SHOW_LAYOUT, $_GET);
-        if(		$is_set && 'package' == $_GET[self::FLAG_SHOW_LAYOUT]) {
-            $this->outputPackageLayout();
-        }
-        else if($is_set && 'page'    == $_GET[self::FLAG_SHOW_LAYOUT]) {
-            $this->outputPageLayout();			
-        }
-        else if($is_set && 'handles' == $_GET[self::FLAG_SHOW_LAYOUT]) {
-            $this->outputHandles();
+        /** @var Mage_Core_Controller_Varien_Action $controllerAction */
+        $controllerAction = $observer->getEvent()->getData('controller_action');
+        if ($controllerAction->getRequest()->isDispatched()) {
+            $is_set = array_key_exists(self::FLAG_SHOW_LAYOUT, $_GET);
+            if(		$is_set && 'package' == $_GET[self::FLAG_SHOW_LAYOUT]) {
+                $this->outputPackageLayout();
+            }
+            else if($is_set && 'page'    == $_GET[self::FLAG_SHOW_LAYOUT]) {
+                $this->outputPageLayout();			
+            }
+            else if($is_set && 'handles' == $_GET[self::FLAG_SHOW_LAYOUT]) {
+                $this->outputHandles();
+            }
         }
     }
 
