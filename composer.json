@@ -1,16 +1,22 @@
 {
-    "name"          : "astorm/layoutviewer",
+    "name"          : "pulsestorm/layoutviewer",
     "type"          : "magento-module",
+    "description"   : "A Magento module that dumps layout information via query string.",    
+    "version"       : "0.1.0",
+    "keywords"      : ["magento","blocks","layout"],
     "license"       : "MIT",
     "homepage"      : "http://alanstorm.com/layouts_blocks_and_templates",
-    "description"   : "A Magento module that dumps layout information via query string.",
+    
     "authors": [
         {
             "name"  : "Alan Storm",
             "email" : "alanstorm@alanstorm.com"
+            "homepage": "http://alanstorm.com",
+            "role": "developer"            
         }
     ],
     "require": {
+        "php": ">=5.2.0",    
         "magento-hackathon/magento-composer-installer": "*"
     }
 }
