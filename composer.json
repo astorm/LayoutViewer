@@ -1,0 +1,16 @@
+{
+    "name"          : "astorm/layoutviewer",
+    "type"          : "magento-module",
+    "license"       : "MIT",
+    "homepage"      : "http://alanstorm.com/layouts_blocks_and_templates",
+    "description"   : "A Magento module that dumps layout information via query string.",
+    "authors": [
+        {
+            "name"  : "Alan Storm",
+            "email" : "alanstorm@alanstorm.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
