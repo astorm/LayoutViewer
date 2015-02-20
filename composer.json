@@ -10,7 +10,7 @@
     "authors": [
         {
             "name"  : "Alan Storm",
-            "email" : "alanstorm@alanstorm.com"
+            "email" : "alanstorm@alanstorm.com",
             "homepage": "http://alanstorm.com",
             "role": "developer"            
         }
